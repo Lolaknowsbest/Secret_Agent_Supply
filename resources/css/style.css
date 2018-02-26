@@ -1,0 +1,290 @@
+/*
+  Main styles
+  */
+html{
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/*Header styles*/
+header{
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  background-color: black;
+  margin: 0 auto;
+}
+
+/*navigation bar*/
+.navigation{
+  display: block;
+  background-color: firebrick;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.navigation span{
+  display:flex;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.75rem 0rem;
+  margin-left: 8rem;
+}
+/*
+Section under the header
+*/
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.logo span{
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  margin: 0.7rem 0rem 0.7rem 1rem;
+}
+
+.picture{
+  height: 1.5rem;
+}
+
+/*
+  BODY OF PAGE
+*/
+.body-box{
+  margin: 0 auto;
+  max-width: 960px;
+}
+.cycle-image{
+  height: 25rem;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-header{
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 8rem;
+  background-color: black;
+  margin-left: 10rem;
+  position: relative;
+  top: 9rem;
+}
+
+.main-header span{
+  display: block;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: black;
+}
+
+.main-header h1{
+  display: block;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-top: 0.85rem;
+  padding-bottom: 3rem;
+  background-color: black;
+}
+
+.images{
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  padding: 2rem 0px;
+}
+
+.images img{
+  width: 8rem;
+}
+.container-pen{
+  width: 30%;
+}
+.container-watch{
+  width: 30%;
+}
+.container-glass{
+  width: 30%;
+}
+.container-pen span{
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.container-watch span{
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.container-glass span{
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+.produce{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+/*
+.container
+{
+  width: 30%;
+  max-width: 960px;
+}
+*/
+
+
+/*
+  Location code
+*/
+.envelope{
+  display: block;
+}
+.space{
+  margin-top: 3rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+
+}
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.title{
+  color: white;
+  background-color: black;
+  padding: 1rem 2rem;
+  margin-bottom: 0.4rem;
+}
+
+/*
+Footer code
+*/
+footer{
+  padding: 5rem 0;
+  display: block;
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+}
+
+/*
+Responsive code
+*/
+@media only screen and (min-width: 1024px){
+  .tablet-nav{
+    display:none;
+  }
+}
+/*
+media query for defualt tablet screen
+*/
+@media only screen and (max-width: 1024px) {
+  html{
+    font-size: 16px;
+  }
+  .main-header{
+    margin-left: 0rem;
+  }
+  .tablet{
+    display: none;
+  }
+  .tablet-nav{
+    text-align: center;
+  }
+  .container-glass{
+    display: none;
+  }
+  .container-pen{
+    width: 47%;
+  }
+  .container-watch{
+    width: 47%;
+  }
+  .contact-info{
+    width: 35%;
+  }
+}
+
+/*
+Media query for mobile phone screen
+*/
+@media only screen and (max-width:470px){
+  .logo span{
+    font-size: 0.77rem;
+  }
+  .cycle-image{
+      height: 17rem;
+  }
+  .main-header{
+    top: 9rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-header span{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    padding-bottom: 0.75rem;
+  }
+  .main-header h1{
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .container-watch{
+    display: none;
+  }
+  .container-pen{
+    width: 90%;
+    justify-content: center;
+  }
+  .contact{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info{
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  footer{
+    text-align: center;
+  }
+}
